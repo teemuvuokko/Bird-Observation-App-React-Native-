@@ -3,6 +3,8 @@ Small demo application to add observation of birds to a list.
 
 ## TBD
 - Add option for user to save data into local storage using async or sql-lite
+- Add option to use date picker to pick the date when the bird was spotted
+- Customize the layout to be more user friendly
 
 # Installation guide
 
