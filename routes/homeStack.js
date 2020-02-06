@@ -1,17 +1,25 @@
-import { createStackNavigator } from "react-native-stack";
 import { createAppContainer } from "react-navigation";
-import Home from './screens/homepage';
-import BirdDetails from '../screens/birdDetails';
+import { createStackNavigator } from "react-navigation-stack";
+import Home from '../screens/homepage';
+
+import Header from '../shared/header';
+import React from 'react';
 
 const screens = {
     Home:{
-        screen: Home
-    },
-    BirdDetails: {
-        screen: BirdDetails
+        screen: Home,
+        navigationOptions: {
+            headerTitle: () => <Header />,            
+        }
     }
 }
 
-const HomeStack = createStackNavigator(screens);
+// Create the navigator object and define styles for all the headers
+const HomeStack = createStackNavigator(screens, {
+    defaultNavigationOptions: {
+        headerTintColor: '#444',
+        headerStyle: {backgroundColor: '#eee', height: 60}
+    } 
+});
 
 export default createAppContainer(HomeStack);
