@@ -6,7 +6,7 @@ Small demo application to add observation of birds to a list.
 - Add option to use date picker to pick the date when the bird was spotted
 - Customize the layout to be more user friendly
 
-# Installation guide
+## Installation guide
 
 Make sure that you have Node.js version 10 LTS or greater installed to use Expo CLI.
 
